@@ -44,7 +44,7 @@ function result(x) {
   }
 
 document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
-    event.preventDefault();
+    //event.preventDefault();
     //Low Up parametrs
     const p_up=[9,5,45,10,1500,350,500,0.3,0.7,1]
     const p_mid=[7.5,0,0,7,875,0,0,0,0,0]
