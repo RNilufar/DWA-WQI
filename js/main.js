@@ -56,7 +56,7 @@ document.querySelector('button[type="submit"]').addEventListener('click', functi
 
     // Check if any required fields are empty
     if (!first || !last || !email || !office) {
-        alert("Please fill in all required fields as your name, email and office.");
+       // alert("Please fill in all required fields as your name, email and office.");
         return;
     }
     
