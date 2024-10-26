@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header and Navigation Bar */
+.header{
+  background-color: #464646;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  top: 0;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+
+
+/* body*/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2 {
+  text-align: center;
+  color: #b58b2f;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.calculator {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.calculator table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rowth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+}
+.centr{
+  align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+}
+.row2 {
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+
+.calculator th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="text"] {
+  margin: 2px;
+  width: 405px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.name input{
+  width: 200px;
+}
+
+img {
+  width: 150px;
+  height: 45px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #b58b2f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #a67a1f;
+}
+.index {
+  width: 100%;
+  display: inline-flex;
+}
+
+.result {
+  width: 66%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#result-box {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 40px;
+}
+.joy {
+  width: 10%;
+}
+.index-range {
+  width: 22%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.index-range p {
+  border: 1px solid #ccc;
+  width: 150px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.green{
+  background-color: rgb(93, 227, 93);
+  color: #000;
+}
+
+.yellow{
+  background-color: rgb(234, 234, 89);
+  color: #000;
+}
+
+.brown{
+  background-color: #f0b43c;
+  color: #000;
+}
+
+.red{
+  background-color: rgb(215, 75, 75);
+  color: #000;
+}
+
+.wqi {
+  margin-top: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.wqi table {
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.wqi table  th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: left;
+}
+
+ol{
+  margin: 20px;
+}
+.on{
+  display: none;
+}
+
+.contacts{
+  background-color: #464646;
+  margin-top: 10px;
+  border: 1px solid #858282;
+}
+.rowc {
+  display: flexbox;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px;
+}
+
+.contacts h2{
+  color: rgb(158, 255, 2);
+  font-size: 30px;
+}
+
+.address{
+color: rgb(248, 248, 248);;
+width: 300px;
+padding: 5px;
+border-right: 2px solid#fff;
+}
+.phone{
+  margin-top: 20px;
+  background: url(/images/phone.png) 0 0 no-repeat;
+  padding-left: 60px;
+  padding-bottom: 20px;
+}
+.email{
+  margin-top: 10px;
+  background: url(/images/envelope.png) 0 0 no-repeat;
+  padding-left: 60px;
+  padding-bottom: 20px;
+}
+
+.address li{
+  margin-top: 10px;
+  list-style: none;
+}
+.name{
+  display: flex;
+}
+.name h3{
+  align-self: center;
+  margin-left: 20px;
+  font-size: 22px;
+}
+.name img{
+  width: 40px;
+  height: 40px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.social{
+  margin-left: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.social img{
+  width: 30px;
+  height: 30px;
+}
+
+.map iframe{
+border-radius: 10px;
+width: 240px;
+height: 240px;
+}
+.borderbox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.border {
+  width: 30%;
+  margin: 10px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+/* Hamburger menu icon */
+.navbar .icon {
+  display: none;
+  /*float: right;*/
+  padding: 14px 20px;
+  color: white;
+  cursor: pointer;
+}
+.buttons{
+  float: right;
+}
+.buttons a{
+  padding: 10px;
+}
+.buttons img{
+  width: 30px;
+  height: 20px;
+
+}
+.actimg{
+  border: 2px solid #9be513;
+}
+
+
+@media (max-width: 600px) {
+  .wqi {
+      padding: 0;
+  }
+  .no{
+    display: none;
+  }
+  .on{
+    display: inline;
+  }
+  img{
+    width: 100%;
+    height: 33px;
+    margin-top: 4px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rowc {
+    flex-direction: column;
+  }
+  .map{
+    margin-top: 10px;
+  }
+  .row2 {
+    width: 100%;
+  }
+  .result {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .index-range {
+    width: 100%;
+  }
+  .index-range p{
+    width: 100%;
+  }
+  input[type="number"] {
+    width: 150px;
+  }
+  .address{
+    border-right: none;
+    border-bottom: 2px solid #fff;
+  }
+  .navbar .icon {
+    display: block;
+  }
+  /* Hide links by default in mobile view */
+  .navbar a {
+    display: none;
+  }
+  .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+  }
+  .buttons a{
+    display: block;
+  }
+  input[type="text"]{
+    width: 100%;
+  }
+}
+
+/* Active class for displaying navbar links in mobile */
+.active a {
+  display: block;
+  text-align: left;
+}
+.active{
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Water Quality Index Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar" id="navbar">
+            <div class="buttons">
+                <span class="icon" onclick="toggleNavBar()">&#9776;</span>
+                <div>
+                    <a href="indexuz.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1920px-Flag_of_Uzbekistan.svg.png" alt="Uzbek" class="actimg">
+                    </a>
+                    <a href="index.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" alt="English">
+                    </a>
+                </div>
+            </div>
+
+            <a href="indexuz.html">Bosh sahifa</a>
+            <a href="aboutuz.html">Biz haqimizda</a>
+            <a href="https://lex.uz/docs/-1935398" target="_blank">Me'yoriy xujjatlar</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1> Suvning Sifat Indeksini (WQI) Hisoblash</h1>
+        <p>
+          Yer osti ichimlik suvining sifat indeksini hisoblaydigan ushbu kalkulyator quyidagi o'nta indikator bo'yicha hisoblaydi: Vodorod - ko'rsatkichi (\(pH\)), Kaliy permanganatli oksidlanish qobilyati(\(OA (KMnO_4)\)), Nitrat (\(NO_3^-\)), Umumiy qattiqligi (\(TH\)), Umumiy minerallanishi (\(TDS\)), Xlorid (\(Cl^-\)), Sulfat (\(SO_{4}^{2-}\)), Temir (\(Fe^{2+}\)), Ftor  (\(F^-\)), Mis (\(Cu^{2+}\)).
+        </p>
+
+        <div class="calculator">
+            <div class="row2">
+                <div>Ism</div>
+                <div class="name">
+                    <input type="text" id="first" placeholder="Ism" required>
+                    <input type="text" id="last" placeholder="Familiya" required>
+                </div>
+            </div>
+            <div class="row2">
+                <div>Email</div>
+                <input type="text" id="email" placeholder="Email" required>
+            </div>
+            <div class="row2">
+                <div>Ish joyi</div>
+                <input type="text" id="office" placeholder="Ish joyi" required>
+            </div>
+        </div>
+
+        <div class="calculator">
+            <div>
+                <div class="rowth">
+                    <strong>Parametr</strong>
+                    <strong>Parametr qiymati</strong>
+                    <strong class="no">Parametr Diapazoni</strong>
+                </div>
+
+                <div class="row">
+                    <div class="row2">
+                        <div>Vodorod - ko'rsatkichi(pH)</div>
+                        <div><input type="number" id="ph" placeholder="pH"></div>
+                    </div>
+                    <div><img class="no" src="images/pH.png"><img class="on" src="images/pHm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Kaliy permanganatli <br>
+                            oksidlanish qobilyati
+                            (OA (KMnO₄))</div>
+                        <div><input type="number" id="oxidizing" placeholder="OA (KMnO₄) (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/OA.png"><img class="on" src="images/OAm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Nitrat (\(NO_3^-\)) </div>
+                        <div><input type="number" id="no3" placeholder="NO₃⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/No3.png"><img class="on" src="images/NO3m.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Umumiy qattiqligi (TH)</div>
+                        <div><input type="number" id="hardness" placeholder="TH(mg-ekv/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/TH.png"><img class="on" src="images/THm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Umumiy minerallanishi(TDS)</div>
+                        <div><input type="number" id="tss" placeholder="TDS (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/TSS.png"><img class="on" src="images/TSSm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Xlorid (Cl⁻)</div>
+                        <div><input type="number" id="cl" placeholder="Cl⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/Cl.png"><img class="on" src="images/Clm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Sulfat (\(SO_{4}^{2-}\))</div>
+                        <div><input type="number" id="so4" placeholder="SO₄²⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/SO4.png"><img class="on" src="images/SO4m.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Temir (Fe²⁺ )</div>
+                        <div><input type="number" id="fe" placeholder="Fe²⁺ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/FE.png"><img class="on" src="images/Fem.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Ftor (F⁻ )</div>
+                        <div><input type="number" id="f" placeholder="F⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/F.png"><img class="on" src="images/Fm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Mis (Cu²⁺ )</div>
+                        <div><input type="number" id="cu" placeholder="Cu²⁺ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/Cu.png"><img class="on" src="images/Cum.png"></div>
+                </div>
+            </div>
+
+            <div class="index row">
+                <div class="result">
+                    <p>Dinamik Vaznsiz o'rtacha Suv Sifati Indeksi(WQI):</p>
+                    <div id="result-box"></div>
+                </div>
+                <div class="joy no"></div>
+                <div class="index-range">
+                    <p >WQI</p>
+                    <p class="green">Yaxshi (81-100)</p>
+                    <p class="yellow">O'rtacha (51-80)</p>
+                    <p class="brown">Qoniqarli (30-50)</p>
+                    <p class="red">Qoniqarsiz (0-29)</p>
+                </div>
+            </div>
+
+
+
+            <div class="submit">
+                <button type="reset">Qayta yuklash</button>
+                <button type="submit">Jo'natsh</button>
+            </div>
+        </div>
+
+        <div class="wqi">
+            <table>
+                <tr>
+                    <th>WQI    </th>
+                    <th>Tavsif</th>
+                </tr>
+                <tr class="green">
+                    <td >Yaxshi <br> (81-100)</td>
+                    <td ><p>Bu toifadagi suv a'lo darajadagi sifatga ega bo'lib, yer yuzasidagi mavjud tashkilotlar tomonidan tavsiya etilgan inson iste'moli uchun barcha xavfsizlik standartlariga javob beradi.</p></td>
+                </tr>
+                <tr class="yellow">
+                    <td >O'rtacha <br> (51-80)</td>
+                    <td ><p>Bu toifadagi suv o'rtacha sifatga mansub bo'lib, inson iste'moli uchun umuman xavfsiz, lekin kichik muammolarni hal qilish uchun ba'zi suv sifatini yaxshilash uchun chora-tadbirlar amalga oshirilishini talab qilishi mumkin.</p></td>
+                </tr>
+                <tr class="brown">
+                    <td >Qoniqarli <br> (30-50)</td>
+                    <td ><p>Bu toifadagi suv qoniqarli sifat darajasiga ega bo'lib, suv organizmlari va ekosistemalar uchun qisman talabga javob beradi, lekin inson iste'moli uchun jiddiy ishlov berishni talab qilishi mumkin.</p></td>
+                </tr>
+                <tr class="red">
+                    <td >Foydalanishga yaroqsiz <br> (0-29)</td>
+                    <td ><p>Bu toifadagi suv foydalanishga yaroqsiz bo'lib, tolerant organizmlar uchun mos bo'lishi mumkin, lekin sezgir organizmlar va  agro-ekosistemalarning suvga bo'lgan ehtiyojini qondirishda foydalanish uchun qat'iy chora-tadbirlarni amalga oshirishni talab qiladi.</p></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="footer">
+            <h2>Suvning Sifat Indeksi(WQI)ni hisoblash</h2>
+            <p>Yer osti ichimlik suvining sifat indeksini hisoblaydigan ushbu kalkulyator quyidagi o'nta indikator bo'yicha hisoblaydi:  \(pH,\) \(OA (KMnO_4),\) \(NO_3^-,\) \(TH,\) \(TSS,\) \(Cl^-,\) \(SO_{4}^{2-},\) \(Fe^{2+},\) \(F^-,\) \(Cu^{2+}.\)</p>
+            <br>
+            <h3>Hisoblash jarayoni 4 bosqichdan iborat</h3>
+
+            <ol>
+                <li>Har bir  \(i-\) parametr qiymati olinadi. Uni \(x_i\) bilan belgilaylik.</li>
+                <li>Sub-Index hisoblash. Har bir olingan \(x_i\) qiymat 0 va 1 oralig'idagi songa masshtabi quyidagi formula yordamida olinadi:
+                    <p style="text-align: center;">\(SI_i=\min\left\{1,\left|\frac{x_i-x^{(st)}_i}{x^{(up)}_i-x^{(st)}_i}\right|\right\},\)</p>
+                    <p>bu yerda  \(x^{(st)}_i\) parametr uchun suv eng yaxshi bo'lgandagi qiymat, \(x^{(up)}_i\) esa \(i-\) parametr uchun standartdagi yuqori chegara.</p>
+                </li>
+                <li>Parametr uchun vazn hisoblash. \(w_i\) bilan har bir  \(i-\) parametr  uchun quyidagi formula bilan hisoblanadigan vaznni belgilaymiz.
+                    <p style="text-align: center;">\(W_i=\frac{e^{SI_i}-1}{\sum\limits_{k=1}^{n}(e^{SI_k}-1)}.\)</p>
+                </li>
+                <li>WQI hisoblash. WQI quyidagi formula orqali hisoblanadi</li>
+                <p style="text-align: center;">\(WQI=100-\sum\limits_{i=1}^{n}w_i\cdot SI_i\cdot 100.\)</p>
+            </ol>
+
+
+
+        </div>
+    </div>
+    <div class="contacts container">
+        <h2>Bog'lanish uchun</h2>
+        <div class="borderbox">
+            <div class="border"></div>
+        </div>
+        <div class="index rowc">
+            <div class="address ">
+                <div class="name">
+                    <img src="/images/avatar.png"alt="">
+                    <h3>Nilufar Rajabova</h3></div>
+                <div class="phone">
+                    <ul>
+                        <li>+998932037532</li>
+                        <li>+998993139416</li>
+                    </ul>
+                </div>
+                <div class="email">
+                    <ul>
+                        <li>ni.rajabova@nuu.uz </li>
+                        <li>nilufarrajabova171@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href="https://t.me/ALCHEMISTPhD">
+                        <img src="/images/Telegram.png">
+                    </a>
+
+                    <a href="https://wa.me/qr/NHENKSANOSY4F1">
+                        <img src="/images/whatsup.png">
+                    </a>
+                    <a href="/images/Wechat.jpg">
+                        <img src="/images/Wechat.png" target="_blank">
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Nilufar-Rajabova-3">
+                        <img src="/images/ResearchGate.png">
+                    </a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.2118702689954!2d69.20067741163714!3d41.34774837118516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d80933c345b%3A0x29d27c39dc5e80ab!2sNUU%20Faculty%20of%20Biology!5e0!3m2!1sen!2s!4v1728529507738!5m2!1sen!2s"   style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

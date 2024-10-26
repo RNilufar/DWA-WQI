@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Water Quality Index Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar" id="navbar">
+            <div class="buttons">
+                <span class="icon" onclick="toggleNavBar()">&#9776;</span>
+                <div>
+                    <a href="indexuz.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1920px-Flag_of_Uzbekistan.svg.png" alt="Uzbek" class="actimg">
+                    </a>
+                    <a href="about.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" alt="English" >
+                    </a>
+                </div>
+            </div>
+
+            <a href="indexuz.html">Bosh sahifa</a>
+            <a href="aboutuz.html">Biz haqimizda</a>
+            <a href="https://lex.uz/docs/-1935398" target="_blank">Me'yoriy xujjatlar</a>
+        </div>
+    </div>
+
+    <div class="container">
+      <h2> Suv Sifat Indeksi modellarining rivojlanish tarixi va ahamiyati</h2>
+      <p>Suv sifat indekslari (WQI) suv resurslarini baholash va monitoring qilishda muhim rol o'ynaydi. Ushbu indekslarni ishlab chiqishda bir qator olimlarning hissalari, ularning yondashuvlari va metodologiyalari muhim ahamiyatga ega. Tarixda ushbu modellarning rivojlanishiga katta ta'sir ko'rsatgan ayrim olimlarning ishlarini quyidagicha tahlil qilishimiz mumkin.</p>
+      <p>
+        Horton, R.K. (1965) suv sifatini baholash uchun indeks raqamlarini ishlab chiqdi, bu esa suv ifloslanishini kamaytirish vositasi sifatida xizmat qildi. U 10 ta parametrni tanlab, har bir parametrning ahamiyatini ko'rsatadigan vaznlarni belgiladi. Hortoning yondashuvi WQI tarixida muhim qadam bo'lib, suv sifatini baholashda tizimli yondashuvni ta'minladi  (Tavassoli, S., & Mohammadi, F., 2017)
+      </p>
+      <p>
+        Brown R.M., McClelland N.I., Deininger R.A. va Tozer R.G. (1970) lar tomonidan yangi WQI modelini ishlab chiqishdi. Ularning modelida DO, koliformlar, pH, temperaturalar, BOD, umumiy fosfat va boshqa parametrlar arifmetik o'rtacha qiymat orqali baholandi. Keyinchalik, geometrik yig'indini kiritish orqali ular yanada mukammal baholash metodologiyasini yaratdilar. Bu yondashuv parametrlar o'rtasidagi o'zaro bog'lanishni hisobga olishga imkon berdi (Casillas-García, L. F., de Anda, J., Yebra-Montes, C., Shear, H., Díaz-Vázquez, D., & Gradilla-Hernández, M. S., 2021)
+      </p>
+      <p>
+        Steinhart C.E Shcierow L.J. va Sonzogni W.C. (1982) lar tomonidan yangi ekologik sifat indeksini (EQI) ishlab chiqdi. Bu indeks biologik, fizik, kimyoviy va toksik parametrlarni o'z ichiga oldi va aniq, keng qamrovli baholash imkoniyatlarini taqdim etdi. Ularning ishlari suv sifatini ekologik nuqtai nazardan baholashda muhim yutuq bo'ldi (Chidiac, S., El Najjar, P., Ouaini, N., El Rayess, Y., & El Azzi, D., 2023).
+      </p>
+      <p>
+        1990-yillarning o'rtalarida Britaniyada yangi WQI joriy etdi, keyinchalik bu indeks Kanadaning atrof-muhit vazirlar kengashi tomonidan takomillashtirildi va CCME WQI sifatida tan olindi. Bu jarayon xalqaro standartlarga moslashishga yordam berdi (Hurley, T., Sadiq, R., & Mazumder, A., 2012), (Oke, A. O., Sangodoyin, A. Y., & Omodele, T., 2017), (Cash, K., & Wright, R., 2001).
+      </p>
+      <p>
+        Umuman olganda, ushbu olimlar va ularning ishlari suv sifatini baholash va monitoring o'tkazish sohasida muhim rivojlanishlarga sabab bo'ldi. Ularning yondashuvlari va metodologiyalari bugungi kunda suv resurslarini boshqarish va muhofaza qilishda qo'llanilmoqda. Suv sifatini baholashda amalga oshirilgan ushbu tadqiqotlar tabiiy va sun'iy ekotizmlarni muhofaza qilish va aholini ekologik toza ichimlik suv resurslari bilan ta'minlashda muhim ahamiyatga ega.
+      </p>
+      <h2>Suv Sifat Indeksi (WQI) modellarining afzalliklari (Uddin, M. G., Nash, S., & Olbert, A. I., 2021):</h2>
+      <ol>
+        <li>
+          <p>
+            Suv sifatini tez va samarali aniqlash imkoniyati mavjudligi;
+          </p>
+        </li>
+        <li>
+          <p>
+            Turli suv manbalari (yer osti va yer usti ichimlik suvlari, shuningdek, daryolar va ko'llar ekotizmlari) ning sifatini aniqlash uchun o'tkaziladigan monitoring tizimlarida foydalanish mumkin, bu esa ularning keng ko'lamli qo'llanilishini ta'minlaydi;
+          </p>
+        </li>
+        <li>
+          <p>
+            WQI keng ko'lamli suv sifati ma'lumotlarini bitta qiymatga aylantirishga yordam beradi, bu esa natijalarni tushunishni osonlashtiradi va qaror qabul qilish jarayonini tezlashtiradi;
+          </p>
+        </li>
+        <li>
+          <p>
+            WQI modellarining to'rtta asosiy bosqichidan iborat: parametrlarni tanlash, sub-indekslar ishlab chiqish, og'irliklarni hisoblash va indeksni yig'ish orqali jarayonlarni tizimli ravishda boshqarishga imkon beradi, bu esa natijalarni yanada ishonchli qiladi;
+          </p>
+        </li>
+        <li>
+          <p>
+          Har bir WQI modeli mahalliy suv sifat standartlariga asoslangan bo'lganligi uchun, ularning natijalari muayyan mintaqa sharoitlariga mos keladi, bu esa mahalliy suv resurslarini samarali boshqarishga yordam beradi;
+          </p>
+        </li>
+        <li>
+          <p>
+            WQI modellarida mavjud bo'lgan noaniqliklar ularni yanada takomillashtirish zaruratini ta'kidlaydi. Bu jarayon ilmiy tadqiqotlar va amaliyot orqali WQI modellarining ishonchliligini oshirishga yordam beradi.
+          </p>
+        </li>
+      </ol>
+      <p>
+        Ushbu afzalliklar asosida WQI modellarining suv sifati monitoringi va baholash, suv resurslarini muhofaza qilish kabi chora-tadbirlarni ishlab chiqishda muhim vosita sifatida xizmat qilishini tushunishimiz mumkin.
+      </p>
+
+    </div>
+
+
+
+    </div>
+    <div class="contacts container">
+        <h2>Bog'lanish uchun</h2>
+        <div class="borderbox">
+            <div class="border"></div>
+        </div>
+        <div class="index rowc">
+            <div class="address ">
+                <div class="name">
+                    <img src="/images/avatar.png"alt="">
+                    <h3>Nilufar Rajabova</h3></div>
+                <div class="phone">
+                    <ul>
+                        <li>+998932037532</li>
+                        <li>+998993139416</li>
+                    </ul>
+                </div>
+                <div class="email">
+                    <ul>
+                        <li>ni.rajabova@nuu.uz </li>
+                        <li>nilufarrajabova171@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href="https://t.me/ALCHEMISTPhD">
+                        <img src="/images/Telegram.png">
+                    </a>
+
+                    <a href="https://wa.me/qr/NHENKSANOSY4F1">
+                      <img src="/images/whatsup.png">
+                  </a>
+                  <a href="/images/Wechat.jpg">
+                      <img src="/images/Wechat.png" target="_blank">
+                  </a>
+                    <a href="https://www.researchgate.net/profile/Nilufar-Rajabova-3">
+                        <img src="/images/ResearchGate.png">
+                    </a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.2118702689954!2d69.20067741163714!3d41.34774837118516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d80933c345b%3A0x29d27c39dc5e80ab!2sNUU%20Faculty%20of%20Biology!5e0!3m2!1sen!2s!4v1728529507738!5m2!1sen!2s"   style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

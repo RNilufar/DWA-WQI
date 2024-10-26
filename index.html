@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Water Quality Index Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar" id="navbar">
+            <div class="buttons">
+                <span class="icon" onclick="toggleNavBar()">&#9776;</span>
+                <div>
+                    <a href="indexuz.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1920px-Flag_of_Uzbekistan.svg.png" alt="Uzbek" class="">
+                    </a>
+                    <a href="index.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" alt="English" class="actimg">
+                    </a>
+                </div>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="https://lex.uz/docs/-1935398" target="_blank">Regulatory Documents</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1> Water Quality Index Calculator</h1>
+        <p>
+            This calculator determines the Water Quality Index (WQI) of underground drinking water in accordance with the following ten parameters:  pH distribution (\(pH\)), Oxidizing ability of KMnO₄ (\(OA (KMnO_4)\)), Nitrate(\(NO_3^-\)), Total Hardness (\(TH\)), Total dissolved solids (\(TDS\)), Chloride (\(Cl^-\)), Sulfate (\(SO_{4}^{2-}\)), Iron (\(Fe^{2+}\)),   Fluoride  (\(F^-\)), Copper (\(Cu^{2+}\)).
+        </p>
+
+        <div class="calculator">
+            <div class="row2">
+                <div>Name</div>
+                <div class="name">
+                    <input type="text" id="first" placeholder="First name" required>
+                    <input type="text" id="last" placeholder="Last name" required>
+                </div>
+            </div>
+            <div class="row2">
+                <div>Email</div>
+                <input type="text" id="email" placeholder="Email" required>
+            </div>
+            <div class="row2">
+                <div>Office</div>
+                <input type="text" id="office" placeholder="Work pleace" required>
+            </div>
+        </div>
+
+        <div class="calculator">
+            <div>
+                <div class="rowth">
+                    <strong>Parameter</strong>
+                    <strong>Data Entry</strong>
+                    <strong class="no">Parameter Range</strong>
+                </div>
+
+                <div class="row">
+                    <div class="row2">
+                        <div>pH</div>
+                        <div><input type="number" id="ph" placeholder="pH"></div>
+                    </div>
+                    <div><img class="no" src="images/pH.png"><img class="on" src="images/pHm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>OA (KMnO₄) (mg/L)</div>
+                        <div><input type="number" id="oxidizing" placeholder="Oxidizing Ability (KMnO₄) (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/OA.png"><img class="on" src="images/OAm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>\(NO_3^-\) (mg/L)</div>
+                        <div><input type="number" id="no3" placeholder="NO₃⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/No3.png"><img class="on" src="images/NO3m.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>TH (mg-ekv/dm³)</div>
+                        <div><input type="number" id="hardness" placeholder="Total Hardness (mg-ekv/dm³)"></div>
+                    </div>
+                    <div><img  class="no" src="images/TH.png"><img class="on" src="images/THm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>TDS (mg/L)</div>
+                        <div><input type="number" id="tss" placeholder="TDS (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/TSS.png"><img class="on" src="images/TSSm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Cl⁻ (mg/L)</div>
+                        <div><input type="number" id="cl" placeholder="Cl⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/Cl.png"><img class="on" src="images/Clm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>\(SO_{4}^{2-}\) (mg/L)</div>
+                        <div><input type="number" id="so4" placeholder="SO₄²⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/SO4.png"><img class="on" src="images/SO4m.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Fe²⁺ (mg/L)</div>
+                        <div><input type="number" id="fe" placeholder="Fe²⁺ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/FE.png"><img class="on" src="images/Fem.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>F⁻ (mg/L)</div>
+                        <div><input type="number" id="f" placeholder="F⁻ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/F.png"><img class="on" src="images/Fm.png"></div>
+                </div>
+                <div class="row">
+                    <div class="row2">
+                        <div>Cu²⁺ (mg/L)</div>
+                        <div><input type="number" id="cu" placeholder="Cu²⁺ (mg/L)"></div>
+                    </div>
+                    <div><img  class="no" src="images/Cu.png"><img class="on" src="images/Cum.png"></div>
+                </div>
+            </div>
+
+            <div class="index row">
+                <div class="result">
+                    <p>Dynamic Unweghted Water Quality Index:</p>
+                    <div id="result-box"></div>
+                </div>
+                <div class="joy no"></div>
+                <div class="index-range">
+                    <p >WQI</p>
+                    <p class="green">Good (81-100)</p>
+                    <p class="yellow">Fair (51-80)</p>
+                    <p class="brown">Marginal (30-50)</p>
+                    <p class="red">Poor (0-29)</p>
+                </div>
+            </div>
+
+
+
+            <div class="submit">
+                <a href="index.html"><button type="reset">Reset</button></a>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="wqi">
+            <table>
+                <tr>
+                    <th>WQI    </th>
+                    <th>Interpretation</th>
+                </tr>
+                <tr class="green">
+                    <td >Good <br> (81-100)</td>
+                    <td ><p>Water quality is excellent. Water in this category meets all safety standards recommended for human consumption by organizations worldwide.</p></td>
+                </tr>
+                <tr class="yellow">
+                    <td >Fair <br> (51-80)</td>
+                    <td ><p>Water quality is fair, generally safe for human consumption but may require some treatment to address minor issues.</p></td>
+                </tr>
+                <tr class="brown">
+                    <td >Marginal <br> (30-50)</td>
+                    <td ><p>Water quality is marginal. This type of water partially meets the needs of aquatic organisms and ecosystems, but it requires serious measures to improve water quality for human consumption.</p></td>
+                </tr>
+                <tr class="red">
+                    <td >Poor <br> (0-29)</td>
+                    <td ><p>Water quality is poor or unsuitable. Water in this category may support tolerant organisms, but strict measures are needed to enhance water quality for sensitive organisms and agro-ecosystems.</p></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="footer">
+            <h2>Water Quality Index Calculation</h2>
+            <p>The water quality index is calculated based on measured values for each of the parameters listed  \(pH,\) \(OA (KMnO_4),\) \(NO_3^-,\) \(TH,\) \(TSS,\) \(Cl^-,\) \(SO_{4}^{2-},\) \(Fe^{2+},\) \(F^-,\) \(Cu^{2+}.\)</p>
+            <br>
+            <h3>The calculation consists of 4 steps</h3>
+
+            <ol>
+                <li>Get the result when the \(i-th\) parameter is measured. Denote it by \(x_i\).</li>
+                <li>Sub-Indexing. Scale each calculated value \(x_i\) to a value between 0 and 1 using the following formula:
+                    <p style="text-align: center;">\(SI_i=\min\left\{1,\left|\frac{x_i-x^{(st)}_i}{x^{(up)}_i-x^{(st)}_i}\right|\right\},\)</p>
+                    <p>where \(x^{(st)}_i\) is the ideal value of the parameter. \(x^{(up)}_i\) is the standard upper bound for the \(i-th\) parameter</p>
+                </li>
+                <li>Parameter Weighting. \(w_i\) weight for the \(i-th\) parameter is calculated by the following formula.
+                    <p style="text-align: center;">\(W_i=\frac{e^{SI_i}-1}{\sum\limits_{k=1}^{n}(e^{SI_k}-1)}.\)</p>
+                </li>
+                <li>Calculating WQI. WQI is calculated by the following formula</li>
+                <p style="text-align: center;">\(WQI=100-\sum\limits_{i=1}^{n}w_i\cdot SI_i\cdot 100.\)</p>
+            </ol>
+
+
+
+        </div>
+    </div>
+    <div class="contacts container">
+        <h2>Contacts</h2>
+        <div class="borderbox">
+            <div class="border"></div>
+        </div>
+        <div class="index rowc">
+            <div class="address ">
+                <div class="name">
+                    <img src="/images/avatar.png"alt="">
+                    <h3>Nilufar Rajabova</h3></div>
+                <div class="phone">
+                    <ul>
+                        <li>+998932037532</li>
+                        <li>+998993139416</li>
+                    </ul>
+                </div>
+                <div class="email">
+                    <ul>
+                        <li>ni.rajabova@nuu.uz </li>
+                        <li>nilufarrajabova171@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href="https://t.me/ALCHEMISTPhD">
+                        <img src="/images/Telegram.png">
+                    </a>
+                    <a href="https://wa.me/qr/NHENKSANOSY4F1">
+                        <img src="/images/whatsup.png">
+                    </a>
+                    <a href="/images/Wechat.jpg">
+                        <img src="/images/Wechat.png" target="_blank">
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Nilufar-Rajabova-3">
+                        <img src="/images/ResearchGate.png">
+                    </a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.2118702689954!2d69.20067741163714!3d41.34774837118516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d80933c345b%3A0x29d27c39dc5e80ab!2sNUU%20Faculty%20of%20Biology!5e0!3m2!1sen!2s!4v1728529507738!5m2!1sen!2s"   style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
